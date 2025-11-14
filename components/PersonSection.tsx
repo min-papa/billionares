@@ -17,7 +17,9 @@ export default async function PersonSection({ id }: IPersonSectionProps) {
         height={416}
       />
       <div className="font-extrabold text-3xl py-4">{personInfo.name}</div>
-      <div className="py-1 font-bold">Networth: {personInfo.netWorth}</div>
+      <div className="py-1 num-counter">
+        Networth: {Math.trunc(personInfo.netWorth / 1000)} Billion
+      </div>
       <div className="py-1 font-bold">Country: {personInfo.country}</div>
       <div className="py-1 font-bold">
         Industry: {personInfo.industries.join(",")}
