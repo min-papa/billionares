@@ -16,7 +16,7 @@ const getBillionares = async () => {
 export default async function Home() {
   const billions: IBillionaire[] = await getBillionares();
   return (
-    <main className="bg-black justify-items-center">
+    <main className="justify-items-center">
       <div className="w-3/4 py-10 grid grid-cols-4 gap-6">
         {billions.map((person, index) => (
           <BillionareCard key={index} {...person} />
