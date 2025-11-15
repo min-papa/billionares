@@ -2,7 +2,6 @@ import { IPersonInfo } from "@/app/types";
 import AssetSection from "@/components/AssetSection";
 import PersonSection from "@/components/PersonSection";
 import { Metadata } from "next";
-import { Suspense } from "react";
 
 interface IParams {
   id: string;
